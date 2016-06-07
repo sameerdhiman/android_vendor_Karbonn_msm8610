@@ -1,0 +1,107 @@
+# Copyright (C) 2014 The CyanogenMod Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# CM priv-app
+PRODUCT_PACKAGES += \
+	CMAccount \
+	CMUpdater \
+	ThemeChooser \
+	ThemesProvider \
+	libcyanogen-dsp \
+	Launcher3 \
+	Trebuchet
+
+# CM app
+PRODUCT_PACKAGES += \
+	Apollo \
+	BluetoothExt \
+	CellBroadcastReceiver \
+	CMFileManager \
+	CMHome \
+	CMWallpapers \
+	DSPManager \
+	Galaxy4 \
+	HoloSpiralWallpaper \
+	LiveWallpapers \
+	LiveWallpapersPicker \
+	LockClock \
+	MagicSmokeWallpapers \
+	NoiseField \
+	PhaseBeam \
+	PhotoPhase \
+	PhotoTable \
+	Stk \
+	Term \
+	VideoEditor \
+	VisualizationWallpapers \
+	VoicePlus
+
+# CM Hardware Abstraction Framework
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
+# Extra tools in CM
+PRODUCT_PACKAGES += \
+    libsepol \
+    openvpn \
+    e2fsck \
+    mke2fs \
+    tune2fs \
+    bash \
+    nano \
+    htop \
+    powertop \
+    lsof \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
+    ntfsfix \
+    ntfs-3g \
+    gdbserver \
+    micro_bench \
+    oprofiled \
+    sqlite3 \
+    strace
+
+# Openssh
+PRODUCT_PACKAGES += \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ssh
+
+# rsync
+PRODUCT_PACKAGES += \
+    rsync
+
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegadec \
+    libstagefright_soft_ffmpegvdec \
+    libFFmpegExtractor \
+    libnamparser
+
+PRODUCT_COPY_FILES += \
+    vendor/cm/config/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
+    vendor/cm/config/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml
+
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
