@@ -11,14 +11,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-LOCAL_PATH := vendor/Karbonn/msm8610
-
-PRODUCT_COPY_FILES += \
-  $(call find-copy-subdir-files,*,${LOCAL_PATH}/system/vendor,system/vendor)
-
-PRODUCT_COPY_FILES += \
-  $(call find-copy-subdir-files,*,${LOCAL_PATH}/system/bin,system/bin)
-
-PRODUCT_COPY_FILES += \
-  $(call find-copy-subdir-files,*,${LOCAL_PATH}/system/etc,system/etc)

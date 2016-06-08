@@ -12,22 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS += vendor/Karbonn/msm8610/overlay
+LOCAL_PATH := vendor/Karbonn/msm8610
 
-$(call inherit-product, vendor/Karbonn/msm8610/msm8610-vendor-blobs.mk)
+PRODUCT_COPY_FILES += \
+  $(call find-copy-subdir-files,*,${LOCAL_PATH}/system/vendor,system/vendor)
 
-# Prebuilt APKs
-PRODUCT_PACKAGES += \
-    btmultisim \
-    com.qualcomm.location \
-    com.qualcomm.services.location \
-    qcrilmsgtunnel \
-    TimeService
+PRODUCT_COPY_FILES += \
+  $(call find-copy-subdir-files,*,${LOCAL_PATH}/system/bin,system/bin)
 
-# Prebuilt jars
-PRODUCT_PACKAGES += \
-    btmultisimlibrary \
-    com.qualcomm.location.vzw_library \
-    qcnvitems \
-    qcrilhook
+PRODUCT_COPY_FILES += \
+  $(call find-copy-subdir-files,*,${LOCAL_PATH}/system/etc,system/etc)
+
+PRODUCT_COPY_FILES += \
+  $(call find-copy-subdir-files,*,${LOCAL_PATH}/system/lib,system/lib)
