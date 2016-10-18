@@ -17,33 +17,12 @@ DEVICE_PACKAGE_OVERLAYS += vendor/Karbonn/msm8610/overlay
 
 $(call inherit-product, vendor/Karbonn/msm8610/msm8610-vendor-blobs.mk)
 
-# Prebuilt APKs
+# << Prebuilt APKs >>
 PRODUCT_PACKAGES += \
-#    AntHalService \
-#    btmultisim \
-#    CABLService \
-#    CarrierLoadService \
-    com.qualcomm.location \
-#    com.qualcomm.msapm \
-    com.qualcomm.services.location \
-#    DeviceInfo \
-#    GsmTuneAway \
-#    ims \
-#    InterfacePermissions \
-#    ModemTestMode \
-#    QComQMIPermissions \
     qcrilmsgtunnel \
     TimeService
 
-# Prebuilt jars
+# << Prebuilt jars >>
 PRODUCT_PACKAGES += \
-#    btmultisimlibrary \
-#    cneapiclient \
-#    com.qrd.wappush \
-#    com.qualcomm.location.vzw_library \
-#    com.quicinc.cne \
-#    imslibrary \
-#    phoneclient \
-#    qmapbridge \
     qcnvitems \
     qcrilhook
