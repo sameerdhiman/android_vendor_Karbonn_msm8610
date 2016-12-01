@@ -19,7 +19,6 @@ $(call inherit-product, vendor/Karbonn/msm8610/msm8610-vendor-blobs.mk)
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    AntHalService \
     btmultisim \
     CABLService \
     CarrierLoadService \

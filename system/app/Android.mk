@@ -15,15 +15,6 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := AntHalService
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := AntHalService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := btmultisim
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := btmultisim.apk
